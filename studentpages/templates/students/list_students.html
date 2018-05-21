@@ -1,0 +1,7 @@
+{% if students %}
+  {% for student in students %}
+    <p>Student Name : {{ student.english_name }}</p>
+  {% endfor %}
+{% else %}
+  <p>No student to views</p>
+{% endif %}
