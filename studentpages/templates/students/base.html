@@ -12,7 +12,6 @@
 	<script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
 	<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
 </head>
-
 	<body style="height: 2500px;" data-spy="scroll" data-target="#myScrollspy" data-offset="1">
 		<div class="container" style="height: 130px; margin-top: -28px;">
 		    <div class="row">
@@ -24,7 +23,7 @@
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top" style="border-bottom: 1px solid #0066ff;">
         <div class="container">
         	<div style="float: left;">
-              <a class="nav-link" style="float: left;" href="{% url 'studentpages:index' %}"><b>| Student |</b></a>
+              <a class="nav-link" style="float: left;" href="{% url 'studentpages:index' %}"><b>| Home |</b></a>
             </div>
             <div>
               <ul class="navbar-nav">
@@ -39,9 +38,8 @@
         </div>
         </nav>
 		<br>
-    {% block content %}
+    	{% block content %}
     
-		
 		{% endblock %}
 		<br><br>
 		<div>
